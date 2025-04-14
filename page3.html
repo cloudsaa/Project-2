@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Music Club Registration</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="page2.html">My Favorite Movies</a></li>
+      <li><a href="index.html">My Resume</a></li>
+	  <li><a href="page3.html">Music Club Registration</a></li>
+    </ul>
+  </nav>
+  <header>
+    <img width="350" height="350" src="images/music.jpg" alt="music logo">
+    <h1>Illinois Music Club Registration</h1>
+	<p>Our music club offers great expertise and companionship for any musical journey you'd like to follow.</p>
+	<p>If your are interested in getting registered, please enter your data below:</p>
+  </header>
+  <main>
+    <form method="get" action="notcreated.php">
+	  <fieldset>
+	    <legend>Your info</legend>
+		<div><label>First Name:<input size="100" type="text" name="first_name_field"></label></div>
+		<div><label>Last name:<input size="100" type="text" name="last_name_field"></label></div>
+		<div><label>Phone:<input size="100" type="tel" name="phone_field"></label></div>
+		<div><label>Email:<input size="100" type="text" name="email_field"></label></div>
+		<div><h3>Gender:</h3></div>
+		<div>
+		  <label>Male<input type="radio" name="gender_field" value="male"></label>
+		  <label>Female<input type="radio" name="gender_field" value="female"></label>
+		</div>
+		<div><h3>Current Degree:</h3></div>
+		<div>
+		  <label>Bachelor's Degree<input type="radio" name="degree_field" value="bachelor"></label>
+		  <label>Master's Degree<input type="radio" name="degree_field" value="master"></label>
+		  <label>PhD<input type="radio" name="degree_field" value="phd"></label>
+		</div>
+		<div><h3>Current Year:</h3></div>
+		<div>
+		  <label>First Year<input type="radio" name="year_field" value="first"></label>
+		  <label>Second Year<input type="radio" name="year_field" value="second"></label>
+		  <label>Third Year<input type="radio" name="year_field" value="third"></label>
+		  <label>Fourth+ Year<input type="radio" name="year_field" value="fourthormore"></label>
+		</div>
+	  </fieldset>
+	  <fieldset>
+	    <legend>Musical Information</legend>
+		<div><h3>Instruments:</h3></div>
+        <div><label>Voice<input type="checkbox" name="instrument_field[]" value="voice"></label></div>
+        <div><label>Piano<input type="checkbox" name="instrument_field[]" value="piano"></label></div>
+        <div><label>Guitar<input type="checkbox" name="instrument_field[]" value="guitar"></label></div>
+        <div><label>Saxophone<input type="checkbox" name="instrument_field[]" value="sax"></label></div>
+        <div><label>Violin<input type="checkbox" name="instrument_field[]" value="violin"></label></div>
+        <div><label>Cello<input type="checkbox" name="Instrument_field[]" value="cello"></label></div>
+        <div><label>Other<input type="checkbox" name="instrument_field[]" value="other"></label></div>
+	    <div><h3>Experience:</h3></div>
+		<div><label>Beginner<input type="radio" name="experience_field" value="beginner"></label></div>
+		<div><label>Intermediate<input type="radio" name="experience_field" value="intermediate"></label></div>
+		<div><label>Advanced<input type="radio" name="experience_field" value="advanced"></label></div>	  
+	    <label for="file">Upload any recent music certifications/documents</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">Upload</button>	  
+	  </fieldset>
+	  <div><input type="submit" value="Let's play!"></div>
+
+	</form>
+  </main>
+  <footer>
+    <img width="250" height="150" src="images/banner.png" alt="club banner">
+    <p><strong>Illinois Music Club &#169;</strong></p>
+  </footer>
+</body>
+</html>
